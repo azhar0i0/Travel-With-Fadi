@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel With Fadi.pk — Explore Pakistan With Confidence</title>
+<meta name="description" content="Guided tours to Hunza, Skardu, Swat, Naran Kaghan and Murree. Family, group, honeymoon and adventure packages with hotels, transport and local guides. Book on WhatsApp.">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --bg:#F6F3EC; --bg-2:#ECE7DB; --bg-3:#E2DBCC;
+  --ink:#0E2A33; --ink-2:#3C5661; --ink-soft:rgba(14,42,51,.12);
+  --teal:#156A77; --teal-deep:#0B4650; --sun:#F3B81B; --sun-deep:#D99F0A;
+  --wa:#25D366; --white:#FFFFFF;
+  --display:'Fraunces',Georgia,serif;
+  --text:'Plus Jakarta Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-io:cubic-bezier(.76,0,.24,1);
+  --r:28px; --r-s:16px;
+  --gutter:clamp(18px,4vw,56px);
+  --section:clamp(96px,14vw,180px);
+  --nav-h:84px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{scrollbar-width:none;-ms-overflow-style:none}
+::-webkit-scrollbar{width:0;height:0;display:none}
+*{scrollbar-width:none}
+*::-webkit-scrollbar{display:none}
+body{background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+::selection{background:var(--sun);color:var(--ink)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:4px;border-radius:6px}
+.wrap{width:100%;max-width:1440px;margin:0 auto;padding-inline:var(--gutter)}
+section{scroll-margin-top:20px}
+h1,h2,h3,.display{font-family:var(--display);font-weight:500;letter-spacing:-.025em;line-height:.98}
+h2{font-size:clamp(2.4rem,5.4vw,4.9rem)}
+h3{font-size:clamp(1.4rem,2.2vw,2rem);letter-spacing:-.015em;line-height:1.1}
+.lede{font-size:clamp(1.05rem,1.35vw,1.3rem);line-height:1.55;color:var(--ink);max-width:56ch}
+.muted{color:var(--ink-2)}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:17px 30px;border-radius:999px;font-weight:600;font-size:1rem;line-height:1;background:var(--ink);color:var(--white);transition:transform .5s var(--ease),background .5s var(--ease),color .5s var(--ease);white-space:nowrap;position:relative;isolation:isolate;overflow:hidden}
+.btn::after{content:"";position:absolute;inset:0;background:var(--teal);transform:translateY(102%);transition:transform .55s var(--ease);z-index:-1;border-radius:inherit}
+.btn:hover::after{transform:translateY(0)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.btn.sun{background:var(--sun);color:var(--ink)}
+.btn.sun::after{background:var(--ink)}
+.btn.sun:hover{color:var(--white)}
+.btn.wa{background:var(--wa);color:#073b1a}
+.btn.wa::after{background:var(--ink)}
+.btn.wa:hover{color:var(--white)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost::after{background:var(--ink)}
+.btn.ghost:hover{color:var(--white)}
+.btn svg{width:20px;height:20px;flex:none}
+.link{position:relative;font-weight:600;padding-bottom:3px}
+.link::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:currentColor;transform:scaleX(1);transform-origin:left;transition:transform .5s var(--ease)}
+.link:hover::after{transform:scaleX(0);transform-origin:right}
+
+/* ---------- reveal motion ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+.rv-img{clip-path:inset(0 0 100% 0);transition:clip-path 1.2s var(--ease-io);transition-delay:var(--d,0ms)}
+.rv-img.in{clip-path:inset(0 0 0 0)}
+.rv-img img{transform:scale(1.15);transition:transform 1.6s var(--ease)}
+.rv-img.in img{transform:scale(1)}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;transition:background .6s var(--ease),height .6s var(--ease),transform .6s var(--ease)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav.scrolled{background:rgba(246,243,236,.92);height:68px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--white);transition:color .5s var(--ease)}
+.brand svg{width:48px;height:48px;flex:none}
+.brand b{font-family:var(--display);font-weight:600;font-size:1.25rem;letter-spacing:-.02em;line-height:1}
+.brand small{display:block;font-size:.72rem;font-weight:600;letter-spacing:.02em;opacity:.85;margin-top:3px}
+.nav.scrolled .brand,body.menu-open .brand{color:var(--white)}
+.nav.scrolled .brand{color:var(--ink)}
+body.menu-open .nav{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.nav-links{display:flex;gap:34px;color:var(--white);font-weight:500;font-size:.97rem;transition:color .5s var(--ease)}
+.nav.scrolled .nav-links{color:var(--ink)}
+.nav-links a{position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--sun);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{display:inline-flex}
+.burger{display:none;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.14);position:relative;transition:background .5s var(--ease),transform .5s var(--ease)}
+.nav.scrolled .burger{background:var(--ink)}
+.burger:active{transform:scale(.94)}
+.burger span{position:absolute;left:16px;width:20px;height:2px;background:var(--white);border-radius:2px;transition:transform .6s var(--ease-io),top .6s var(--ease-io),opacity .3s}
+.burger span:nth-child(1){top:20px}.burger span:nth-child(2){top:26px}.burger span:nth-child(3){top:32px}
+body.menu-open .burger{background:rgba(255,255,255,.14)}
+body.menu-open .burger span:nth-child(1){top:26px;transform:rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0;transform:scaleX(0)}
+body.menu-open .burger span:nth-child(3){top:26px;transform:rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:90;background:var(--ink);color:var(--white);clip-path:polygon(100% 0,100% 0,100% 0);transition:clip-path 1s var(--ease-io);display:flex;flex-direction:column;justify-content:flex-end;padding:calc(var(--nav-h) + 20px) var(--gutter) 48px}
+body.menu-open .menu{clip-path:polygon(100% 0,-250% 0,100% 350%)}
+.menu-links{display:flex;flex-direction:column;gap:6px;margin-bottom:40px}
+.menu-links a{font-family:var(--display);font-size:clamp(2.6rem,11vw,4.6rem);line-height:1.05;letter-spacing:-.03em;display:inline-block;transform:translateY(110%);opacity:0;transition:transform .9s var(--ease),opacity .9s var(--ease);transition-delay:0s}
+.menu-links li{overflow:hidden}
+body.menu-open .menu-links a{transform:none;opacity:1}
+body.menu-open .menu-links li:nth-child(1) a{transition-delay:.35s}
+body.menu-open .menu-links li:nth-child(2) a{transition-delay:.42s}
+body.menu-open .menu-links li:nth-child(3) a{transition-delay:.49s}
+body.menu-open .menu-links li:nth-child(4) a{transition-delay:.56s}
+body.menu-open .menu-links li:nth-child(5) a{transition-delay:.63s}
+body.menu-open .menu-links li:nth-child(6) a{transition-delay:.70s}
+body.menu-open .menu-links li:nth-child(7) a{transition-delay:.77s}
+.menu-foot{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .75s,transform .8s var(--ease) .75s}
+body.menu-open .menu-foot{opacity:1;transform:none}
+.menu-foot .socials a{color:var(--white)}
+.menu-mark{position:absolute;right:-6vw;bottom:-6vw;width:52vw;max-width:420px;opacity:.07;pointer-events:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100dvh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--white);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:var(--teal-deep)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:kb 26s var(--ease) infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1) translateY(0)}to{transform:scale(1.12) translateY(-2%)}}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(8,30,38,.86) 0%,rgba(8,30,38,.42) 45%,rgba(8,30,38,.12) 100%)}
+.hero .wrap{padding-top:calc(var(--nav-h) + 40px);padding-bottom:40px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(2.9rem,8.6vw,8.4rem);font-weight:500;line-height:.94;letter-spacing:-.035em;max-width:11ch}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .w i{display:inline-block;font-style:normal;transform:translateY(110%);animation:rise 1.2s var(--ease) forwards}
+.hero h1 .w:nth-child(2) i{animation-delay:.08s}.hero h1 .w:nth-child(3) i{animation-delay:.16s}.hero h1 .w:nth-child(4) i{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.hero p.lede{color:rgba(255,255,255,.92);margin:28px 0 36px;max-width:46ch;opacity:0;animation:fade 1.2s var(--ease) .5s forwards}
+@keyframes fade{to{opacity:1}}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;opacity:0;animation:fade 1.2s var(--ease) .7s forwards}
+.hero-actions .link{color:var(--white)}
+.hero-side{opacity:0;animation:fade 1.2s var(--ease) .9s forwards;justify-self:end;text-align:right;max-width:34ch}
+.hero-side .tag{font-family:var(--display);font-size:clamp(1.2rem,1.6vw,1.6rem);line-height:1.2;letter-spacing:-.01em}
+.hero-side .tag em{color:var(--sun);font-style:italic}
+.hero-side p{margin-top:10px;color:rgba(255,255,255,.78);font-size:.95rem}
+.promises{margin-top:64px;padding-top:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;opacity:0;animation:fade 1.2s var(--ease) 1.1s forwards;position:relative}
+.promises::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:rgba(255,255,255,.22)}
+.promise{display:flex;gap:14px;align-items:flex-start}
+.promise svg{width:28px;height:28px;flex:none;stroke:var(--sun)}
+.promise b{display:block;font-weight:600;font-size:1rem}
+.promise span{font-size:.9rem;color:rgba(255,255,255,.75)}
+.scroll-cue{position:absolute;right:var(--gutter);top:50%;transform:translateY(-50%);width:1px;height:90px;background:rgba(255,255,255,.25);overflow:hidden}
+.scroll-cue::after{content:"";position:absolute;left:0;top:0;width:100%;height:40%;background:var(--sun);animation:cue 2.2s var(--ease-io) infinite}
+@keyframes cue{0%{transform:translateY(-100%)}100%{transform:translateY(260%)}}
+
+/* ---------- marquee ---------- */
+.marquee{overflow:hidden;white-space:nowrap;user-select:none}
+.marquee.sun{background:var(--sun);color:var(--ink);padding:18px 0}
+.track{display:inline-flex;align-items:center;gap:0;animation:scroll 42s linear infinite;will-change:transform}
+.marquee.sun .track{animation-direction:reverse;animation-duration:36s}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.track .it{display:inline-flex;align-items:center;gap:22px;padding:0 28px;font-family:var(--display);font-size:clamp(1.6rem,3.2vw,3rem);letter-spacing:-.02em;line-height:1}
+.track .it img{width:clamp(44px,5vw,66px);height:clamp(44px,5vw,66px);border-radius:50%;object-fit:cover;flex:none;background:var(--bg-3)}
+.track .it .dot{width:10px;height:10px;border-radius:50%;background:var(--sun)}
+.marquee.sun .it{font-family:var(--text);font-weight:700;font-size:1rem;letter-spacing:.01em;text-transform:none;padding:0 22px;gap:22px}
+.marquee.sun .it .dot{background:var(--ink)}
+
+/* ---------- about ---------- */
+.about{padding:var(--section) 0 0}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(32px,6vw,96px);align-items:center}
+.about-media{position:relative}
+.frame{background:var(--bg-2);padding:10px;border-radius:var(--r)}
+.frame .inner{border-radius:calc(var(--r) - 10px);overflow:hidden;background:var(--bg-3)}
+.about-main{aspect-ratio:4/5}
+.about-main img{width:100%;height:100%;object-fit:cover}
+.about-small{position:absolute;right:-8%;bottom:-10%;width:46%;transform:rotate(-4deg);transition:transform .8s var(--ease)}
+.about-small:hover{transform:rotate(0) translateY(-6px)}
+.about-small .frame{background:var(--sun)}
+.about-small .inner{aspect-ratio:1}
+.about-small img{width:100%;height:100%;object-fit:cover}
+.about-copy h2{margin-bottom:28px}
+.about-copy p{margin-bottom:18px;max-width:58ch}
+.about-list{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:26px 32px}
+.about-list li{display:flex;gap:14px;align-items:flex-start}
+.about-list svg{width:26px;height:26px;flex:none;stroke:var(--teal)}
+.about-list b{display:block;font-weight:600}
+.about-list span{font-size:.95rem;color:var(--ink-2)}
+.sign{margin-top:36px;display:flex;align-items:center;gap:16px}
+.sign .name{font-family:var(--display);font-style:italic;font-size:1.6rem;letter-spacing:-.02em}
+.sign small{color:var(--ink-2)}
+
+/* ---------- destinations ---------- */
+.dest{padding:var(--section) 0 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:48px}
+.sec-head .lede{max-width:44ch}
+.dest-ctrl{display:flex;gap:10px}
+.dest-ctrl button{padding:12px 22px;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--ink);font-weight:600;transition:background .4s var(--ease),color .4s var(--ease),transform .4s var(--ease)}
+.dest-ctrl button:hover{background:var(--ink);color:var(--white)}
+.dest-ctrl button:active{transform:scale(.95)}
+.dest-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;cursor:grab;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter)}
+.dest-track.drag{cursor:grabbing;scroll-snap-type:none}
+.dcard{flex:0 0 clamp(270px,27vw,400px);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:3/4.2;background:var(--bg-3);color:var(--white);isolation:isolate;transform:translateZ(0)}
+.dcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease);z-index:-2}
+.dcard:hover img{transform:scale(1.08)}
+.dcard::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(8,30,38,.88),rgba(8,30,38,.1) 55%,transparent)}
+.dcard .body{position:absolute;left:0;right:0;bottom:0;padding:26px}
+.dcard h3{font-size:clamp(1.9rem,2.6vw,2.5rem);margin-bottom:8px}
+.dcard .meta{display:flex;gap:14px;font-size:.9rem;color:rgba(255,255,255,.8)}
+.dcard .more{max-height:0;opacity:0;overflow:hidden;transition:max-height .7s var(--ease),opacity .7s var(--ease),margin .7s var(--ease);font-size:.95rem;color:rgba(255,255,255,.9)}
+.dcard:hover .more,.dcard:focus-within .more{max-height:120px;opacity:1;margin-top:12px}
+.dcard .season{position:absolute;top:20px;left:20px;background:var(--sun);color:var(--ink);font-weight:700;font-size:.78rem;padding:7px 12px;border-radius:999px}
+
+/* ---------- services ---------- */
+.services{padding:var(--section) 0 0}
+.serv-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,96px);align-items:start}
+.serv-list li{border-radius:var(--r-s);padding:26px 22px;display:grid;grid-template-columns:40px 1fr;gap:20px;align-items:start;transition:background .5s var(--ease),transform .5s var(--ease);cursor:default}
+.serv-list li:hover,.serv-list li.active{background:var(--white);transform:translateX(8px)}
+.serv-list svg{width:34px;height:34px;stroke:var(--teal);transition:transform .6s var(--ease)}
+.serv-list li:hover svg{transform:translateY(-3px) rotate(-6deg)}
+.serv-list h3{margin-bottom:6px}
+.serv-list p{color:var(--ink-2);font-size:.98rem;max-width:48ch}
+.serv-media{position:sticky;top:110px}
+.serv-media .inner{aspect-ratio:4/5;position:relative}
+.serv-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .9s var(--ease),transform 1.4s var(--ease)}
+.serv-media img.show{opacity:1;transform:scale(1)}
+.serv-media .cap{position:absolute;left:22px;bottom:22px;background:var(--white);color:var(--ink);padding:12px 18px;border-radius:999px;font-weight:600;font-size:.92rem;transition:transform .6s var(--ease)}
+
+/* ---------- planner ---------- */
+.planner{margin-top:var(--section);background:var(--ink);color:var(--white);padding:var(--section) 0;position:relative;overflow:hidden}
+.planner-bg{position:absolute;right:-10%;top:-20%;width:60%;opacity:.06;pointer-events:none}
+.planner-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,96px);align-items:start}
+.planner h2{margin-bottom:24px}
+.planner .lede{color:rgba(255,255,255,.85)}
+.summary{margin-top:40px;padding:28px;border-radius:var(--r-s);background:rgba(255,255,255,.07)}
+.summary small{display:block;font-weight:600;color:var(--sun);margin-bottom:10px;font-size:.9rem}
+.summary p{font-family:var(--display);font-size:clamp(1.35rem,2vw,1.9rem);line-height:1.25;letter-spacing:-.015em;transition:opacity .4s}
+.summary p.flip{opacity:0}
+.form{background:var(--bg);color:var(--ink);border-radius:var(--r);padding:clamp(22px,3vw,40px)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.field label.lbl{display:block;font-weight:600;font-size:.92rem;margin-bottom:9px}
+.sel{position:relative}
+.sel-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--white);padding:16px 18px;border-radius:14px;text-align:left;font-weight:500;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.sel-btn:hover{transform:translateY(-1px)}
+.sel.open .sel-btn{box-shadow:0 0 0 2px var(--teal)}
+.sel-btn svg{width:18px;height:18px;transition:transform .5s var(--ease);flex:none}
+.sel.open .sel-btn svg{transform:rotate(180deg)}
+.sel-list{position:absolute;left:0;right:0;top:calc(100% + 8px);background:var(--white);border-radius:14px;padding:8px;z-index:20;box-shadow:0 24px 60px -20px rgba(14,42,51,.35);opacity:0;transform:translateY(-8px) scale(.98);pointer-events:none;transition:opacity .35s var(--ease),transform .45s var(--ease);max-height:280px;overflow-y:auto}
+.sel.open .sel-list{opacity:1;transform:none;pointer-events:auto}
+.sel-list li{padding:12px 14px;border-radius:9px;cursor:pointer;transition:background .3s var(--ease),transform .3s var(--ease);display:flex;justify-content:space-between;align-items:center}
+.sel-list li:hover,.sel-list li.focus{background:var(--bg-2);transform:translateX(3px)}
+.sel-list li[aria-selected="true"]{font-weight:600}
+.sel-list li[aria-selected="true"]::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--sun)}
+.stepper{display:flex;align-items:center;background:var(--white);border-radius:14px;overflow:hidden}
+.stepper button{width:54px;height:54px;font-size:1.4rem;font-weight:500;transition:background .3s var(--ease)}
+.stepper button:hover{background:var(--bg-2)}
+.stepper button:active{transform:scale(.9)}
+.stepper output{flex:1;text-align:center;font-weight:600;font-size:1.05rem}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{position:relative}
+.pill input{position:absolute;opacity:0;width:0;height:0}
+.pill span{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--white);font-weight:500;cursor:pointer;transition:background .4s var(--ease),color .4s var(--ease),transform .4s var(--ease)}
+.pill span:hover{transform:translateY(-2px)}
+.pill input:checked+span{background:var(--ink);color:var(--white)}
+.pill input:focus-visible+span{outline:2px solid var(--teal);outline-offset:3px}
+.chks{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+.chk{display:flex;align-items:center;gap:12px;cursor:pointer;padding:6px 0;font-weight:500}
+.chk input{position:absolute;opacity:0;width:0;height:0}
+.chk-box{width:24px;height:24px;border-radius:8px;background:var(--white);box-shadow:inset 0 0 0 1.5px rgba(14,42,51,.25);display:grid;place-items:center;transition:background .35s var(--ease),box-shadow .35s var(--ease),transform .35s var(--ease);flex:none}
+.chk:hover .chk-box{transform:scale(1.08)}
+.chk-box svg{width:14px;height:14px;stroke:var(--white);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:20;stroke-dashoffset:20;transition:stroke-dashoffset .4s var(--ease) .05s}
+.chk input:checked+.chk-box{background:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.chk input:checked+.chk-box svg{stroke-dashoffset:0}
+.chk input:focus-visible+.chk-box{outline:2px solid var(--teal);outline-offset:3px}
+.form .btn{width:100%;justify-content:center;margin-top:28px}
+.input{width:100%;background:var(--white);border:0;padding:16px 18px;border-radius:14px;font:inherit;color:var(--ink);transition:box-shadow .4s var(--ease)}
+.input:focus{outline:none;box-shadow:0 0 0 2px var(--teal)}
+textarea.input{min-height:140px;resize:vertical}
+
+/* ---------- gallery ---------- */
+.gallery{padding:var(--section) 0 0}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(110px,13vw,200px);gap:14px}
+.g{border-radius:var(--r-s);overflow:hidden;position:relative;background:var(--bg-3);cursor:zoom-in;isolation:isolate}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform 1.5s var(--ease)}
+.g:hover img{transform:scale(1.07)}
+.g figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px;color:var(--white);font-weight:600;font-size:.95rem;background:linear-gradient(to top,rgba(8,30,38,.8),transparent);transform:translateY(100%);transition:transform .7s var(--ease)}
+.g:hover figcaption{transform:none}
+.g1{grid-column:span 7;grid-row:span 3}.g2{grid-column:span 5;grid-row:span 2}.g3{grid-column:span 5;grid-row:span 1}
+.g4{grid-column:span 4;grid-row:span 2}.g5{grid-column:span 4;grid-row:span 2}.g6{grid-column:span 4;grid-row:span 2}
+.g7{grid-column:span 8;grid-row:span 2}.g8{grid-column:span 4;grid-row:span 2}
+.lightbox{position:fixed;inset:0;z-index:120;background:rgba(8,30,38,.94);display:grid;place-items:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
+.lightbox.on{opacity:1;pointer-events:auto}
+.lightbox img{max-width:min(92vw,1200px);max-height:84vh;border-radius:18px;transform:scale(.94);transition:transform .6s var(--ease);object-fit:contain}
+.lightbox.on img{transform:none}
+.lightbox .cap{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--white);font-weight:600}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);color:var(--white);padding:14px 20px;border-radius:999px;background:rgba(255,255,255,.1);font-weight:600;transition:background .3s}
+.lb-btn:hover{background:rgba(255,255,255,.22)}
+.lb-prev{left:24px}.lb-next{right:24px}
+.lb-close{position:absolute;top:24px;right:24px;transform:none}
+/* ---------- film teaser (home) ---------- */
+.watch{padding:var(--section) 0 0}
+.watch-box{background:var(--ink);color:var(--white);border-radius:var(--r);padding:clamp(48px,6vw,96px) clamp(28px,5vw,80px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;position:relative;overflow:hidden;isolation:isolate}
+.watch-box::before,.watch-box::after,.f-strip::before,.f-strip::after{content:"";position:absolute;left:0;right:0;height:8px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.16) 0 12px,transparent 12px 26px)}
+.watch-box::before{top:16px}.watch-box::after{bottom:16px}
+.kick{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);margin-bottom:20px}
+.rec{width:9px;height:9px;border-radius:50%;background:#FF4D3D;flex:none;animation:blink 1.4s steps(2,jump-none) infinite}
+@keyframes blink{50%{opacity:.15}}
+.watch-box h2 em,.f-title em{font-style:italic;color:var(--sun)}
+.watch-box .lede{color:rgba(255,255,255,.82);margin:24px 0 36px}
+.fan{position:relative;height:clamp(300px,34vw,440px)}
+.fan a{position:absolute;left:50%;bottom:0;width:clamp(120px,13vw,180px);aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:4px solid var(--white);background:var(--bg-3);box-shadow:0 30px 60px -20px rgba(0,0,0,.6);transform-origin:50% 130%;transform:translateX(-50%) rotate(calc(var(--k) * 8deg));transition:transform .9s var(--ease)}
+.fan a img{width:100%;height:100%;object-fit:cover}
+.fan:hover a{transform:translateX(calc(-50% + var(--k) * 58%)) rotate(calc(var(--k) * 6deg))}
+.fan:hover a:hover{transform:translateX(calc(-50% + var(--k) * 58%)) translateY(-18px)}
+.fan-play{position:absolute;left:50%;bottom:28%;translate:-50% 0;z-index:9;width:66px;height:66px;border-radius:50%;background:var(--sun);color:var(--ink);display:grid;place-items:center;pointer-events:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.6);transition:opacity .5s var(--ease)}
+.fan:hover .fan-play{opacity:0}
+.fan-play svg{width:22px;height:22px;fill:currentColor;margin-left:3px}
+
+/* ---------- film room (page) ---------- */
+.films{position:fixed;inset:0;z-index:110;background:#071A20;color:var(--white);overflow-y:auto;overflow-x:hidden;display:flex;flex-direction:column;clip-path:inset(100% 0 0 0);visibility:hidden;transition:clip-path 1s var(--ease-io),visibility 0s linear 1s}
+.films.on{clip-path:inset(0);visibility:visible;transition:clip-path 1s var(--ease-io)}
+.films>*{position:relative;z-index:1}
+.films .f-grain{position:fixed;z-index:3;opacity:.06}
+.f-amb{position:fixed;inset:-10%;z-index:0;pointer-events:none}
+.f-amb img{width:100%;height:100%;object-fit:cover;filter:blur(70px) saturate(1.5);opacity:.5;transition:opacity .8s var(--ease)}
+.f-amb img.out{opacity:0}
+.f-amb::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 50% 45%,transparent 0%,rgba(7,26,32,.7) 58%,#071A20 92%)}
+.f-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px var(--gutter)}
+.f-back,.f-sound{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.95rem;padding:11px 18px;border-radius:999px;background:rgba(255,255,255,.08);transition:background .4s var(--ease),color .4s var(--ease)}
+.f-back{padding-left:12px}
+.f-back:hover,.f-sound:hover{background:var(--sun);color:var(--ink)}
+.f-back svg{width:18px;height:18px}
+.f-vol{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.eq{display:inline-flex;align-items:flex-end;gap:2px;height:14px}
+.eq i{width:3px;height:40%;border-radius:2px;background:currentColor}
+.f-sound[aria-pressed="true"] .eq i{animation:eq .8s ease-in-out infinite alternate}
+.eq i:nth-child(2){animation-delay:-.3s!important}.eq i:nth-child(3){animation-delay:-.55s!important}.eq i:nth-child(4){animation-delay:-.15s!important}
+@keyframes eq{to{height:100%}}
+.f-main{flex:1;display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(24px,4vw,72px);align-items:center;padding:8px var(--gutter) 28px}
+.f-title{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,5.2vw,5.6rem);line-height:.92;letter-spacing:-.04em}
+.f-chapters{margin-top:32px;display:flex;flex-wrap:wrap;gap:8px}
+.f-chapters button{padding:9px 16px;border-radius:999px;box-shadow:inset 0 0 0 1.2px rgba(255,255,255,.28);font-weight:600;font-size:.9rem;transition:background .4s var(--ease),color .4s var(--ease),box-shadow .4s var(--ease)}
+.f-chapters button:hover{box-shadow:inset 0 0 0 1.2px var(--white)}
+.f-chapters button[aria-selected="true"]{background:var(--white);color:var(--ink);box-shadow:none}
+.f-screen{position:relative;justify-self:center}
+.f-screen::before{content:"";position:absolute;inset:-14px;border-radius:34px;border:1px solid rgba(255,255,255,.14);pointer-events:none}
+.f-frame{position:relative;height:clamp(360px,calc(100dvh - 300px),660px);aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 40px 100px -30px rgba(0,0,0,.85)}
+.f-frame video{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .3s var(--ease),transform .9s var(--ease)}
+.f-frame.swap video{opacity:0;transform:scale(1.05)}
+.f-rec{position:absolute;top:14px;left:14px;display:flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;letter-spacing:.1em;font-variant-numeric:tabular-nums;padding:6px 11px;border-radius:999px;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.f-tap{position:absolute;inset:0;display:grid;place-items:center}
+.f-tap .big{width:78px;height:78px;border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:grid;place-items:center;opacity:0;transform:scale(.8);transition:opacity .4s var(--ease),transform .5s var(--ease)}
+.f-frame.paused .big{opacity:1;transform:none}
+.f-tap .big svg{width:26px;height:26px;fill:var(--white);margin-left:4px}
+.f-bar{position:absolute;left:14px;right:14px;bottom:14px;height:3px;border-radius:3px;background:rgba(255,255,255,.25);overflow:hidden;pointer-events:none}
+.f-bar i{display:block;height:100%;background:var(--sun);transform:scaleX(0);transform-origin:left}
+.f-stamp{position:absolute;right:-60px;top:-48px;width:124px;height:124px;color:var(--sun);animation:spin 24s linear infinite;pointer-events:none}
+.f-stamp text{font-family:var(--text);font-size:8.6px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;fill:currentColor}
+@keyframes spin{to{transform:rotate(360deg)}}
+.f-meta{justify-self:start}
+.f-count{display:flex;align-items:baseline;gap:10px;font-family:var(--display);line-height:.8}
+.f-num{font-size:clamp(5rem,10vw,10rem);font-weight:400;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.2px rgba(255,255,255,.75);overflow:hidden;display:inline-block;padding-top:.08em}
+.f-num span{display:inline-block;animation:numIn .8s var(--ease)}
+@keyframes numIn{from{transform:translateY(70%);opacity:0}}
+.f-of{font-size:1.3rem;color:rgba(255,255,255,.5)}
+.f-meta .chap{display:block;margin-top:24px;color:var(--sun);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+.f-meta h3{font-size:clamp(1.6rem,2.4vw,2.4rem);margin:10px 0 12px;max-width:14ch}
+.f-meta p{color:rgba(255,255,255,.72);max-width:30ch;font-size:.98rem}
+.f-meta .anim{animation:fadeUp .7s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}}
+.f-nav{margin-top:28px;display:flex;gap:10px}
+.f-nav button{width:52px;height:52px;border-radius:50%;box-shadow:inset 0 0 0 1.2px rgba(255,255,255,.35);display:grid;place-items:center;transition:background .4s var(--ease),color .4s var(--ease),box-shadow .4s var(--ease),transform .4s var(--ease)}
+.f-nav button:hover{background:var(--sun);color:var(--ink);box-shadow:none}
+.f-nav button:active{transform:scale(.92)}
+.f-nav svg{width:20px;height:20px}
+.f-strip{background:#030D10;padding:24px 0}
+.f-strip::before{top:7px}.f-strip::after{bottom:7px}
+.f-reel{position:relative;display:flex;gap:10px;overflow-x:auto;padding:0 var(--gutter)}
+.f-reel::before,.f-reel::after{content:"";margin:auto}
+.f-cell{flex:none;width:clamp(60px,5.4vw,78px);aspect-ratio:9/14;border-radius:6px;overflow:hidden;position:relative;opacity:.45;filter:grayscale(1);transition:opacity .5s var(--ease),filter .5s var(--ease),transform .5s var(--ease),box-shadow .5s var(--ease)}
+.f-cell img{width:100%;height:100%;object-fit:cover}
+.f-cell b{position:absolute;left:6px;bottom:4px;font-size:.7rem;text-shadow:0 1px 4px #000}
+.f-cell:hover{opacity:.9;filter:none}
+.f-cell.on{opacity:1;filter:none;box-shadow:0 0 0 2px var(--sun);transform:translateY(-3px)}
+.f-cell[hidden]{display:none}
+.f-intro,.f-screen,.f-meta,.f-strip{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.films.on .f-intro,.films.on .f-screen,.films.on .f-meta,.films.on .f-strip{opacity:1;transform:none}
+.films.on .f-intro{transition-delay:.45s}.films.on .f-screen{transition-delay:.55s}.films.on .f-meta{transition-delay:.65s}.films.on .f-strip{transition-delay:.75s}
+@media (max-width:960px){
+  .watch-box{grid-template-columns:1fr}
+  .fan{height:320px}
+  .f-vol{display:none}
+  .f-main{grid-template-columns:1fr;gap:26px;padding-top:0}
+  .f-title{font-size:clamp(2.3rem,10vw,3.6rem)}
+  .f-chapters{margin-top:18px;flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter)}
+  .f-chapters button{flex:none}
+  .f-frame{height:min(66vh,560px)}
+  .f-stamp{width:92px;height:92px;right:-34px;top:-34px}
+  .f-meta{justify-self:stretch;display:grid;grid-template-columns:auto 1fr;column-gap:20px;align-items:center}
+  .f-count{grid-row:1 / 4}
+  .f-num{font-size:4.6rem}
+  .f-of{display:none}
+  .f-meta .chap{margin-top:0}
+  .f-meta h3{margin:4px 0 6px;font-size:1.5rem}
+  .f-meta p{font-size:.92rem}
+  .f-nav{grid-column:1 / -1;margin-top:18px}
+}
+
+/* ---------- testimonials ---------- */
+.testi{padding:var(--section) 0 0}
+.testi-box{background:var(--bg-2);border-radius:var(--r);padding:clamp(40px,6vw,96px) clamp(24px,6vw,96px);position:relative;overflow:hidden}
+.quote-mark{position:absolute;top:-10px;left:28px;font-family:var(--display);font-size:16rem;line-height:1;color:var(--sun);opacity:.55;pointer-events:none}
+.tslide{display:none}
+.tslide.on{display:block}
+.tslide blockquote{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.6rem);line-height:1.25;letter-spacing:-.02em;max-width:28ch;position:relative}
+.tslide blockquote .w{display:inline-block;opacity:0;transform:translateY(12px);animation:wordin .7s var(--ease) forwards}
+@keyframes wordin{to{opacity:1;transform:none}}
+.tslide footer{margin-top:36px;display:flex;align-items:center;gap:16px;opacity:0;animation:fade .8s var(--ease) .5s forwards}
+.avatar{width:54px;height:54px;border-radius:50%;background:var(--ink);color:var(--white);display:grid;place-items:center;font-family:var(--display);font-size:1.3rem}
+.tslide footer b{display:block}
+.tslide footer span{color:var(--ink-2);font-size:.92rem}
+.t-nav{margin-top:40px;display:flex;align-items:center;gap:12px}
+.t-nav button{width:40px;height:4px;border-radius:4px;background:rgba(14,42,51,.2);transition:background .4s,transform .4s var(--ease)}
+.t-nav button.on{background:var(--ink);transform:scaleX(1.5)}
+
+/* ---------- reviews ---------- */
+.reviews{padding:var(--section) 0 0}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.rev-col:nth-child(2){margin-top:48px}
+.rev-col:nth-child(3){margin-top:16px}
+.rcard{background:var(--white);border-radius:22px;padding:28px;margin-bottom:22px;transition:transform .7s var(--ease);transform:rotate(var(--rot,0deg))}
+.rcard:hover{transform:rotate(0) translateY(-6px)}
+.stars{display:flex;gap:3px;margin-bottom:14px}
+.stars svg{width:16px;height:16px;fill:var(--sun)}
+.rcard p{font-size:1rem;line-height:1.55;margin-bottom:18px}
+.rcard .who{display:flex;justify-content:space-between;align-items:center;font-size:.9rem}
+.rcard .who b{display:block}
+.rcard .who span{color:var(--ink-2)}
+.rcard .src{color:var(--ink-2);font-weight:600}
+.rev-cta{margin-top:40px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+
+/* ---------- contact ---------- */
+.contact{padding:var(--section) 0}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,96px)}
+.contact h2{margin-bottom:22px}
+.c-lines{margin-top:36px;display:grid;gap:22px}
+.c-lines li{display:flex;gap:16px;align-items:flex-start}
+.c-lines svg{width:26px;height:26px;stroke:var(--teal);flex:none}
+.c-lines b{display:block}
+.c-lines a{color:var(--ink-2)}
+.c-lines a:hover{color:var(--teal)}
+.socials{display:flex;gap:10px}
+.socials a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--bg-2);transition:transform .5s var(--ease),background .4s}
+.socials a:hover{transform:translateY(-4px) rotate(-8deg);background:var(--sun)}
+.socials svg{width:20px;height:20px;fill:currentColor}
+.contact .form{background:var(--bg-2)}
+
+/* ---------- footer ---------- */
+.footer{background:var(--ink);color:var(--white);padding:72px 0 28px;overflow:hidden}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:60px}
+.foot-top .brand{color:var(--white)}
+.foot-cols{display:flex;gap:clamp(32px,6vw,90px);flex-wrap:wrap}
+.foot-cols h4{font-weight:600;margin-bottom:14px;color:var(--sun)}
+.foot-cols li{margin-bottom:8px;color:rgba(255,255,255,.78)}
+.foot-cols a:hover{color:var(--white)}
+.wordmark{font-family:var(--display);font-size:clamp(3rem,11.5vw,12rem);line-height:.9;letter-spacing:-.045em;white-space:nowrap;color:rgba(255,255,255,.1);margin:0 calc(var(--gutter) * -1) 28px;padding:0 var(--gutter);user-select:none}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;color:rgba(255,255,255,.55)}
+.footer .socials a{background:rgba(255,255,255,.1)}
+.footer .socials a:hover{background:var(--sun);color:var(--ink)}
+
+/* ---------- floating whatsapp ---------- */
+.fab{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:0;background:var(--wa);color:#063d1c;border-radius:999px;padding:8px;box-shadow:0 20px 40px -14px rgba(37,211,102,.6);transition:transform .5s var(--ease),gap .5s var(--ease),padding .5s var(--ease);transform:translateY(0)}
+.fab::before{content:"";position:absolute;inset:-6px;border-radius:999px;border:2px solid var(--wa);opacity:0;animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%{transform:scale(.9);opacity:.6}100%{transform:scale(1.25);opacity:0}}
+.fab svg{width:30px;height:30px;fill:#063d1c;margin:10px}
+.fab span{max-width:0;overflow:hidden;white-space:nowrap;font-weight:700;transition:max-width .6s var(--ease),padding .6s var(--ease)}
+.fab:hover span{max-width:200px;padding-right:18px}
+.fab:hover{transform:translateY(-4px)}
+.fab:active{transform:scale(.95)}
+.fab.hide{transform:translateY(140px)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-side{justify-self:start;text-align:left}
+  .about-grid,.serv-grid,.planner-grid,.contact-grid{grid-template-columns:1fr}
+  .serv-media{display:none}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .rev-col:nth-child(3){grid-column:span 2;margin-top:0;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .rev-col:nth-child(3) .rcard{margin-bottom:0}
+  .g1{grid-column:span 12;grid-row:span 3}.g2{grid-column:span 6;grid-row:span 2}.g3{grid-column:span 6;grid-row:span 2}
+  .g4,.g5,.g6{grid-column:span 4}.g7{grid-column:span 7}.g8{grid-column:span 5}
+}
+@media (max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:block}
+  .promises{grid-template-columns:1fr 1fr;gap:18px}
+  .scroll-cue{display:none}
+  .hero .wrap{padding-bottom:28px}
+  .about-small{position:static;width:100%;transform:none;margin-top:14px}
+  .about-small .inner{aspect-ratio:16/9}
+  .about-list{grid-template-columns:1fr}
+  .frow,.chks{grid-template-columns:1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .rev-col{margin-top:0!important}
+  .rev-col:nth-child(3){grid-column:auto;display:block}
+  .rev-col:nth-child(3) .rcard{margin-bottom:22px}
+  .rcard{--rot:0deg!important}
+  .bento{grid-auto-rows:120px}
+  .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8{grid-column:span 6;grid-row:span 2}
+  .g1,.g7{grid-column:span 12;grid-row:span 2}
+  .lb-prev,.lb-next{top:auto;bottom:70px;transform:none}
+  .wordmark{font-size:14vw}
+  .fab{right:14px;bottom:14px}
+  .serv-list li{grid-template-columns:32px 1fr;gap:14px;padding:20px 14px}
+  .serv-list li:hover{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .rv,.rv-img{opacity:1;transform:none;clip-path:none}
+  .hero h1 .w i,.hero p.lede,.hero-actions,.hero-side,.promises{transform:none;opacity:1}
+  .menu-links a,.menu-foot{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7L18.5 22 12 18l-6.5 4 1.8-7.7L2 9.6 9 9z"/></symbol><symbol id="i-fb" viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></symbol><symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 3.6c2.7 0 3 0 4.1.1 2.8.1 4.1 1.5 4.2 4.2.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c-.1 2.7-1.4 4.1-4.2 4.2-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-2.8-.1-4.1-1.5-4.2-4.2C3.6 15 3.6 14.7 3.6 12s0-3 .1-4.1C3.8 5.2 5.1 3.8 7.9 3.7 9 3.6 9.3 3.6 12 3.6zM12 2C9.3 2 9 2 7.9 2.1 4.2 2.2 2.2 4.2 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.7 2.1 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.7-.1 5.7-2.1 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.7-2.1-5.7-5.8-5.8C15 2 14.7 2 12 2z"/></symbol><symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.5 3c.3 2.3 1.6 3.7 3.9 3.9v3.3c-1.4 0-2.7-.4-3.9-1.2v6.3c0 3.5-2.3 5.7-5.4 5.7-3 0-5.4-2.4-5.4-5.4s2.4-5.4 5.4-5.4c.3 0 .6 0 .9.1v3.4c-.3-.1-.6-.2-.9-.2a2.1 2.1 0 1 0 2.1 2.1V3h3.3z"/></symbol></svg>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Travel With Fadi.pk — home">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="#0E2A33"/>
+        <path d="M14 50 A36 36 0 0 1 86 50" fill="none" stroke="#F3B81B" stroke-width="7" stroke-linecap="round"/>
+        <path d="M18 70 L36 42 L46 56 L58 36 L82 70 Z" fill="#FFFFFF"/>
+        <path d="M58 36 L64 45 L52 45 Z" fill="#0E2A33" opacity=".25"/>
+        <path d="M36 42 L41 50 L31 50 Z" fill="#0E2A33" opacity=".25"/>
+        <path d="M64 24 l9 -6 l-3 9 l5 4 l-7 1 l-5 7 l-2 -7 l-8 -2 z" fill="#F3B81B"/>
+        <path d="M22 76 h56" stroke="#F3B81B" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span><b>Travel With Fadi<span style="color:var(--sun)">.pk</span></b><small>Explore Pakistan With Confidence</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#destinations">Destinations</a>
+      <a href="#services">Services</a>
+      <a href="#plan">Plan a trip</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#films">Films</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/923345855430?text=Assalam%20o%20Alaikum%20Fadi%2C%20I%20want%20to%20book%20a%20tour." target="_blank" rel="noopener" class="btn sun nav-cta">Book on WhatsApp</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <svg class="menu-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 70 L36 42 L46 56 L58 36 L82 70 Z" fill="#fff"/><path d="M14 50 A36 36 0 0 1 86 50" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+  <ul class="menu-links">
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#plan">Plan a trip</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#films">Films</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="menu-foot">
+    <a href="https://wa.me/923345855430" target="_blank" rel="noopener" class="btn wa">WhatsApp 0334 5855430</a>
+    <div class="socials">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+      <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><use href="#i-tt"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=80" srcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80 1400w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=80 2200w" sizes="100vw" alt="Turquoise lake beneath snow-capped peaks in northern Pakistan" fetchpriority="high"></div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1><span class="w"><i>Explore</i></span> <span class="w"><i>Pakistan</i></span> <span class="w"><i>with</i></span> <span class="w"><i>confidence.</i></span></h1>
+        <p class="lede">Guided tours to Hunza, Skardu, Swat, Naran Kaghan and Murree, planned by someone who has driven every one of those roads himself.</p>
+        <div class="hero-actions">
+          <a href="#plan" class="btn sun">Plan my trip</a>
+          <a href="#destinations" class="link">See destinations</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="tag">Your journey, <em>our passion.</em></div>
+        <p>Best tours. Best service. Best memories. Book directly on WhatsApp and talk to Fadi, not a call centre.</p>
+      </div>
+    </div>
+    <ul class="promises">
+      <li class="promise"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Affordable prices</b><span>Best packages</span></div></li>
+      <li class="promise"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8"/><path d="M2 17h20M6 17v2M18 17v2M8 7V5h8v2"/></svg><div><b>Comfortable travel</b><span>Luxury &amp; safety</span></div></li>
+      <li class="promise"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg><div><b>Experienced guides</b><span>Local expertise</span></div></li>
+      <li class="promise"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11a7 7 0 0 1 14 0v5a2 2 0 0 1-2 2h-1v-6h3M5 11h3v6H7a2 2 0 0 1-2-2v-4zM12 18v2"/></svg><div><b>24/7 support</b><span>We are here</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="track1">
+    <span class="it"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=200&q=70" alt="">Hunza<span class="dot"></span></span>
+    <span class="it"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=200&q=70" alt="">Skardu<span class="dot"></span></span>
+    <span class="it"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=200&q=70" alt="">Swat<span class="dot"></span></span>
+    <span class="it"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=200&q=70" alt="">Naran Kaghan<span class="dot"></span></span>
+    <span class="it"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=200&q=70" alt="">Murree<span class="dot"></span></span>
+  </div>
+</div>
+<div class="marquee sun" aria-hidden="true">
+  <div class="track" id="track2">
+    <span class="it">Best tours<span class="dot"></span></span>
+    <span class="it">Best service<span class="dot"></span></span>
+    <span class="it">Best memories<span class="dot"></span></span>
+    <span class="it">#ExplorePakistanWithConfidence<span class="dot"></span></span>
+    <span class="it">Family &amp; group packages<span class="dot"></span></span>
+    <span class="it">Honeymoon packages<span class="dot"></span></span>
+    <span class="it">Adventure trips &amp; camping<span class="dot"></span></span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <div class="frame rv-img"><div class="inner about-main"><img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1200&q=80" alt="Fadi standing on a ridge above a northern valley" loading="lazy"></div></div>
+      <div class="about-small rv" style="--d:200ms"><div class="frame"><div class="inner"><img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Camp beside a glacial lake at dusk" loading="lazy"></div></div></div>
+    </div>
+    <div class="about-copy">
+      <h2 class="rv">Hello, I'm Fadi. I'll be the one answering your messages.</h2>
+      <p class="lede rv" style="--d:80ms">Travel With Fadi.pk started with a simple idea: every family, couple and group deserves to see the north without worrying about the road, the hotel, or who to call when the weather changes. So we handle all of it.</p>
+      <p class="rv" style="--d:140ms">From the first WhatsApp message to the drive back home, you deal with one team. Our drivers know every bend on the Karakoram Highway, our guides grew up in these valleys, and we only book hotels we have stayed in ourselves.</p>
+      <ul class="about-list">
+        <li class="rv" style="--d:180ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Safety first, always</b><span>Vetted drivers, checked vehicles, weather watched daily.</span></div></li>
+        <li class="rv" style="--d:240ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l6-10 4 6 3-4 5 8z"/><circle cx="18" cy="6" r="2"/></svg><div><b>Real adventure</b><span>Camping, trekking and jeep tracks when you want them.</span></div></li>
+        <li class="rv" style="--d:300ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><div><b>Memories made</b><span>We stop for the photo. Every time.</span></div></li>
+        <li class="rv" style="--d:360ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 16 0v6a2 2 0 0 1-2 2h-2v-6h4M4 12h4v8H6a2 2 0 0 1-2-2v-6z"/></svg><div><b>One number, any hour</b><span>0334 5855430 reaches a person, not a bot.</span></div></li>
+      </ul>
+      <div class="sign rv" style="--d:420ms"><span class="name">— Fadi</span><small>Founder, Travel With Fadi.pk</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESTINATIONS ============ -->
+<section class="dest" id="destinations">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="rv">Our top destinations</h2>
+        <p class="lede rv" style="--d:80ms">Five valleys we return to every season. Hover a card for what makes each one worth the drive.</p>
+      </div>
+      <div class="dest-ctrl rv" style="--d:140ms"><button type="button" id="dPrev">Prev</button><button type="button" id="dNext">Next</button></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="dest-track" id="dTrack">
+      <article class="dcard rv" tabindex="0"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=80" alt="Hunza Valley" loading="lazy"><span class="season">Best Apr – Oct</span><div class="body"><h3>Hunza</h3><div class="meta"><span>5–7 days</span><span>Attabad Lake · Eagle's Nest</span></div><p class="more">Cherry blossom in April, golden autumn in October, and the Karakoram all year round.</p></div></article>
+      <article class="dcard rv" style="--d:80ms" tabindex="0"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80" alt="Skardu" loading="lazy"><span class="season">Best May – Sep</span><div class="body"><h3>Skardu</h3><div class="meta"><span>6–8 days</span><span>Shangrila · Deosai</span></div><p class="more">Cold desert, alpine lakes and the second-highest plateau on Earth, all from one base.</p></div></article>
+      <article class="dcard rv" style="--d:160ms" tabindex="0"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80" alt="Swat Valley" loading="lazy"><span class="season">Best Mar – Nov</span><div class="body"><h3>Swat</h3><div class="meta"><span>3–5 days</span><span>Kalam · Malam Jabba</span></div><p class="more">Pine forests, river towns and skiing in winter. The easiest first trip to the north.</p></div></article>
+      <article class="dcard rv" style="--d:240ms" tabindex="0"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=80" alt="Naran Kaghan" loading="lazy"><span class="season">Best May – Sep</span><div class="body"><h3>Naran Kaghan</h3><div class="meta"><span>3–4 days</span><span>Saif-ul-Malook · Babusar</span></div><p class="more">The classic family loop: a fairy-tale lake, a high pass, and a night under the stars.</p></div></article>
+      <article class="dcard rv" style="--d:320ms" tabindex="0"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="Murree hills" loading="lazy"><span class="season">All year</span><div class="body"><h3>Murree</h3><div class="meta"><span>1–2 days</span><span>Mall Road · Patriata</span></div><p class="more">Two hours from Islamabad. Snow in January, cool pines in June, chairlifts any time.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="rv">Everything handled, start to finish</h2><p class="lede rv" style="--d:80ms">Pick what you need. We'll quote it as one clear price with nothing hidden.</p></div>
+    </div>
+    <div class="serv-grid">
+      <ul class="serv-list" id="servList">
+        <li class="rv active" data-img="0"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><div><h3>Northern &amp; Southern tours</h3><p>From Hunza and Skardu to the coast at Gwadar. Set itineraries or fully custom routes.</p></div></li>
+        <li class="rv" style="--d:70ms" data-img="1"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M15 20a5 5 0 0 1 6-4.5"/></svg><div><h3>Family &amp; group packages</h3><p>Comfortable vans, kid-friendly stops and rooms booked together. Groups of 4 to 40.</p></div></li>
+        <li class="rv" style="--d:140ms" data-img="2"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg><div><h3>Honeymoon packages</h3><p>Private car, quiet hotels, a few surprises along the way. We keep the details to ourselves.</p></div></li>
+        <li class="rv" style="--d:210ms" data-img="3"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3zM12 4v16M8 20l4-7 4 7"/></svg><div><h3>Adventure trips &amp; camping</h3><p>Tents, sleeping bags, bonfire and a cook. Jeep tracks to Fairy Meadows and Deosai.</p></div></li>
+        <li class="rv" style="--d:280ms" data-img="4"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V8l9-4 9 4v12M3 20h18M9 20v-5h6v5M9 11h2M13 11h2"/></svg><div><h3>Hotel bookings</h3><p>Only places we've slept in. Hot water confirmed, views checked, breakfast included.</p></div></li>
+        <li class="rv" style="--d:350ms" data-img="5"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V9l2-4h12l2 4v7"/><path d="M2 16h20M6 16v3M18 16v3M4 9h16"/><circle cx="8" cy="13" r="1.2"/><circle cx="16" cy="13" r="1.2"/></svg><div><h3>Transport &amp; guide facility</h3><p>Sedans, Hiace vans, 4×4 jeeps, and a guide who speaks the valley's language.</p></div></li>
+      </ul>
+      <div class="serv-media rv" style="--d:120ms">
+        <div class="frame"><div class="inner">
+          <img class="show" src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <span class="cap" id="servCap">Northern &amp; Southern tours</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANNER ============ -->
+<section class="planner" id="plan">
+  <svg class="planner-bg" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 70 L36 42 L46 56 L58 36 L82 70 Z" fill="#fff"/></svg>
+  <div class="wrap planner-grid">
+    <div>
+      <h2 class="rv">Build your trip in thirty seconds</h2>
+      <p class="lede rv" style="--d:80ms">Choose a valley, pick your dates and add what you need. The message writes itself and lands straight in Fadi's WhatsApp.</p>
+      <div class="summary rv" style="--d:160ms"><small>Your plan so far</small><p id="summary">A 5-day family trip to Hunza for 2 travellers in June, with hotel booking and transport &amp; guide.</p></div>
+    </div>
+    <form class="form rv" id="planForm" style="--d:120ms" novalidate>
+      <div class="frow">
+        <div class="field"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Destination</span>
+          <div class="sel" data-key="dest">
+            <button type="button" class="sel-btn" aria-haspopup="listbox" aria-expanded="false"><span class="sel-val">Hunza</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <ul class="sel-list" role="listbox"><li role="option" aria-selected="true">Hunza</li><li role="option">Skardu</li><li role="option">Swat</li><li role="option">Naran Kaghan</li><li role="option">Murree</li><li role="option">Hunza + Skardu</li><li role="option">Not sure yet</li></ul>
+          </div>
+        </div>
+        <div class="field"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Duration</span>
+          <div class="sel" data-key="days">
+            <button type="button" class="sel-btn" aria-haspopup="listbox" aria-expanded="false"><span class="sel-val">5 days</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <ul class="sel-list" role="listbox"><li role="option">2 days</li><li role="option">3 days</li><li role="option">4 days</li><li role="option" aria-selected="true">5 days</li><li role="option">7 days</li><li role="option">10 days</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="frow">
+        <div class="field"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Travellers</span>
+          <div class="stepper"><button type="button" id="minus" aria-label="Fewer travellers">–</button><output id="count">2</output><button type="button" id="plus" aria-label="More travellers">+</button></div>
+        </div>
+        <div class="field"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Travel month</span>
+          <div class="sel" data-key="month">
+            <button type="button" class="sel-btn" aria-haspopup="listbox" aria-expanded="false"><span class="sel-val">June</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <ul class="sel-list" role="listbox"><li role="option">January</li><li role="option">February</li><li role="option">March</li><li role="option">April</li><li role="option">May</li><li role="option" aria-selected="true">June</li><li role="option">July</li><li role="option">August</li><li role="option">September</li><li role="option">October</li><li role="option">November</li><li role="option">December</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="field" style="margin-bottom:20px"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Trip type</span>
+        <div class="pills" id="types">
+          <label class="pill"><input type="radio" name="type" value="family" checked><span>Family</span></label>
+          <label class="pill"><input type="radio" name="type" value="group"><span>Group</span></label>
+          <label class="pill"><input type="radio" name="type" value="honeymoon"><span>Honeymoon</span></label>
+          <label class="pill"><input type="radio" name="type" value="adventure"><span>Adventure</span></label>
+        </div>
+      </div>
+      <div class="field"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Add to the trip</span>
+        <div class="chks" id="addons">
+          <label class="chk"><input type="checkbox" value="hotel booking" checked><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Hotel booking</span></label>
+          <label class="chk"><input type="checkbox" value="transport & guide" checked><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Transport &amp; guide</span></label>
+          <label class="chk"><input type="checkbox" value="camping night"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Camping night</span></label>
+          <label class="chk"><input type="checkbox" value="jeep track"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Jeep track day</span></label>
+          <label class="chk"><input type="checkbox" value="photography stops"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Photography stops</span></label>
+          <label class="chk"><input type="checkbox" value="pickup from Lahore/Islamabad"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Pickup from Lahore / Islamabad</span></label>
+        </div>
+      </div>
+      <button type="submit" class="btn wa" id="sendPlan">Send this plan on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="rv">Moments from the road</h2><p class="lede rv" style="--d:80ms">A few frames from recent trips. Tap any one to see it large.</p></div>
+    </div>
+    <div class="bento" id="bento">
+      <figure class="g g1 rv"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80" alt="Attabad Lake, Hunza" loading="lazy"><figcaption>Attabad Lake, Hunza</figcaption></figure>
+      <figure class="g g2 rv" style="--d:60ms"><img src="https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?auto=format&fit=crop&w=1200&q=80" alt="Morning over Skardu" loading="lazy"><figcaption>Morning over Skardu</figcaption></figure>
+      <figure class="g g3 rv" style="--d:120ms"><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80" alt="Road to Babusar Top" loading="lazy"><figcaption>Road to Babusar Top</figcaption></figure>
+      <figure class="g g4 rv" style="--d:180ms"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80" alt="Night sky at Deosai" loading="lazy"><figcaption>Night sky at Deosai</figcaption></figure>
+      <figure class="g g5 rv" style="--d:240ms"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80" alt="Saif-ul-Malook at noon" loading="lazy"><figcaption>Saif-ul-Malook at noon</figcaption></figure>
+      <figure class="g g6 rv" style="--d:300ms"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80" alt="Sunrise from Eagle's Nest" loading="lazy"><figcaption>Sunrise from Eagle's Nest</figcaption></figure>
+      <figure class="g g7 rv" style="--d:360ms"><img src="images/bonfire-night.jpg" alt="Bonfire night with the group" loading="lazy" style="object-position:center 72%"><figcaption>Bonfire night with the group</figcaption></figure>
+      <figure class="g g8 rv" style="--d:420ms"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80" alt="Pines above Kalam" loading="lazy"><figcaption>Pines above Kalam</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-btn lb-close" id="lbClose">Close</button>
+  <button class="lb-btn lb-prev" id="lbPrev">Prev</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext">Next</button>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<!-- ============ FILMS TEASER ============ -->
+<section class="watch" id="watch">
+  <div class="wrap">
+    <div class="watch-box rv">
+      <div>
+        <p class="kick"><span class="rec"></span>Now showing · 12 clips</p>
+        <h2>Twelve clips.<br><em>Zero filters.</em></h2>
+        <p class="lede">Bus singalongs, snowball fights and a paraglider over the lake, all filmed on our travellers' phones. Step into the film room.</p>
+        <a href="#films" class="btn sun">Open the film room<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="fan">
+        <a href="#films" data-clip="1" style="--k:-2;z-index:1"><img src="videos/snow-day.jpg" alt="Snow day up top" loading="lazy"></a>
+        <a href="#films" data-clip="6" style="--k:-1;z-index:2"><img src="videos/bus-party.jpg" alt="The bus never goes quiet" loading="lazy"></a>
+        <a href="#films" data-clip="3" style="--k:1;z-index:2"><img src="videos/golden-hour.jpg" alt="Golden hour at the stay" loading="lazy"></a>
+        <a href="#films" data-clip="7" style="--k:2;z-index:1"><img src="videos/van-singalong.jpg" alt="Van singalong" loading="lazy"></a>
+        <a href="#films" data-clip="0" style="--k:0;z-index:3"><img src="videos/paragliding.jpg" alt="Paragliding day" loading="lazy"></a>
+        <span class="fan-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi" id="testimonials">
+  <div class="wrap">
+    <div class="testi-box rv">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <div id="tslides">
+        <div class="tslide on"><blockquote>Fadi bhai planned our whole Hunza trip in one evening on WhatsApp. Hotels were exactly as promised and the driver felt like family by day two.</blockquote><footer><span class="avatar">A</span><div><b>Ayesha &amp; family</b><span>Lahore · Hunza, 6 days</span></div></footer></div>
+        <div class="tslide"><blockquote>We wanted a honeymoon that didn't feel like a tour. Private car, quiet rooms, and he never once called unless we asked. Perfect.</blockquote><footer><span class="avatar">H</span><div><b>Hamza &amp; Maryam</b><span>Karachi · Skardu, 7 days</span></div></footer></div>
+        <div class="tslide"><blockquote>Twenty-two of us from the office. Not one complaint about the van, the food or the timing. That has never happened before.</blockquote><footer><span class="avatar">S</span><div><b>Saad R.</b><span>Islamabad · Naran Kaghan, 4 days</span></div></footer></div>
+      </div>
+      <div class="t-nav" id="tnav"><button type="button" class="on" aria-label="Testimonial 1"></button><button type="button" aria-label="Testimonial 2"></button><button type="button" aria-label="Testimonial 3"></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="rv">What the last groups said</h2><p class="lede rv" style="--d:80ms">Straight from WhatsApp and our social pages, unedited.</p></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-col">
+        <article class="rcard rv" style="--rot:-2deg"><div class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div><p>Babusar was closed the morning we were meant to cross. Fadi had already rerouted us before we woke up. That's the difference.</p><div class="who"><div><b>Bilal T.</b><span>Naran, Aug</span></div><span class="src">Google</span></div></article>
+        <article class="rcard rv" style="--rot:1.5deg;--d:80ms"><div class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div><p>Clean van, patient driver, and he stopped every time my mother wanted a photo. She's already planning the next one.</p><div class="who"><div><b>Nimra K.</b><span>Swat, May</span></div><span class="src">Facebook</span></div></article>
+      </div>
+      <div class="rev-col">
+        <article class="rcard rv" style="--rot:2deg;--d:120ms"><div class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div><p>Price quoted on day one was the price we paid. No "extras" on the last day. Honest people.</p><div class="who"><div><b>Usman &amp; Sara</b><span>Hunza, Oct</span></div><span class="src">WhatsApp</span></div></article>
+        <article class="rcard rv" style="--rot:-1.5deg;--d:200ms"><div class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div><p>The camping night at Fairy Meadows was the best night of my life. Bonfire, tea, stars. Thank you Fadi bhai.</p><div class="who"><div><b>Danish M.</b><span>Fairy Meadows, Jul</span></div><span class="src">Instagram</span></div></article>
+      </div>
+      <div class="rev-col">
+        <article class="rcard rv" style="--rot:-2.5deg;--d:160ms"><div class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div><p>Replied at 2am when our flight got delayed and moved the whole plan by a day without fuss.</p><div class="who"><div><b>Zainab A.</b><span>Skardu, Sep</span></div><span class="src">Google</span></div></article>
+        <article class="rcard rv" style="--rot:1deg;--d:240ms"><div class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div><p>Took my parents, both over 70. Short drives, good rest stops, warm rooms. Exactly what I asked for.</p><div class="who"><div><b>Faisal Q.</b><span>Murree, Dec</span></div><span class="src">Facebook</span></div></article>
+      </div>
+    </div>
+    <div class="rev-cta rv">
+      <a href="https://wa.me/923345855430?text=Hi%20Fadi%2C%20I%20travelled%20with%20you%20and%20want%20to%20leave%20a%20review." target="_blank" rel="noopener" class="btn ghost">Share your review</a>
+      <span class="muted">Travelled with us? We'd love to hear how it went.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 class="rv">Let's plan it together</h2>
+      <p class="lede rv" style="--d:80ms">Message, call or send the form. You'll hear back from Fadi himself, usually within the hour.</p>
+      <ul class="c-lines">
+        <li class="rv" style="--d:120ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><b>Call or WhatsApp</b><a href="tel:+923345855430">0334 5855430</a></div></li>
+        <li class="rv" style="--d:180ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Hours</b><a>Every day, 24/7. We answer at 2am too.</a></div></li>
+        <li class="rv" style="--d:240ms"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg><div><b>Departures</b><a>Lahore, Islamabad and Rawalpindi pickups</a></div></li>
+        <li class="rv" style="--d:300ms"><div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><use href="#i-tt"/></svg></a>
+        </div></li>
+      </ul>
+    </div>
+    <form class="form rv" id="contactForm" style="--d:120ms" novalidate>
+      <div class="frow">
+        <div class="field"><label class="lbl" for="cName">Your name</label><input class="input" id="cName" type="text" placeholder="Ahmed Khan" required></div>
+        <div class="field"><label class="lbl" for="cPhone">Phone / WhatsApp</label><input class="input" id="cPhone" type="tel" placeholder="03xx xxxxxxx" required></div>
+      </div>
+      <div class="field" style="margin-bottom:20px"><span class="lbl" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:9px">Where to?</span>
+        <div class="sel" data-key="cdest">
+          <button type="button" class="sel-btn" aria-haspopup="listbox" aria-expanded="false"><span class="sel-val">Hunza</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="sel-list" role="listbox"><li role="option" aria-selected="true">Hunza</li><li role="option">Skardu</li><li role="option">Swat</li><li role="option">Naran Kaghan</li><li role="option">Murree</li><li role="option">Somewhere else</li></ul>
+        </div>
+      </div>
+      <div class="field"><label class="lbl" for="cMsg">Tell us a little</label><textarea class="input" id="cMsg" placeholder="Dates, number of people, anything we should know."></textarea></div>
+      <button type="submit" class="btn wa">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="#top" class="brand"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff"/><path d="M14 50 A36 36 0 0 1 86 50" fill="none" stroke="#F3B81B" stroke-width="7" stroke-linecap="round"/><path d="M18 70 L36 42 L46 56 L58 36 L82 70 Z" fill="#0E2A33"/><path d="M64 24 l9 -6 l-3 9 l5 4 l-7 1 l-5 7 l-2 -7 l-8 -2 z" fill="#F3B81B"/><path d="M22 76 h56" stroke="#F3B81B" stroke-width="4" stroke-linecap="round"/></svg><span><b>Travel With Fadi<span style="color:var(--sun)">.pk</span></b><small>Explore Pakistan With Confidence</small></span></a>
+        <p style="margin-top:22px;max-width:36ch;color:rgba(255,255,255,.75)">Best tours, best service, best memories. Northern and southern Pakistan, planned by people who live for the road.</p>
+      </div>
+      <div class="foot-cols">
+        <div><h4>Destinations</h4><ul><li><a href="#destinations">Hunza</a></li><li><a href="#destinations">Skardu</a></li><li><a href="#destinations">Swat</a></li><li><a href="#destinations">Naran Kaghan</a></li><li><a href="#destinations">Murree</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="#about">About Fadi</a></li><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div><h4>Talk to us</h4><ul><li><a href="tel:+923345855430">0334 5855430</a></li><li><a href="https://wa.me/923345855430" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+          <div class="socials" style="margin-top:14px">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><use href="#i-tt"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wordmark rv" aria-hidden="true">Travel With Fadi.pk</div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Travel With Fadi.pk · #ExplorePakistanWithConfidence</span>
+      <span>Some landscape photography via Unsplash.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FILM ROOM (page, opens at #films) ============ -->
+<div class="films" id="films" role="dialog" aria-modal="true" aria-label="Film room" aria-hidden="true">
+  <div class="f-amb" aria-hidden="true"><img id="fAmb" alt=""></div>
+  <div class="grain f-grain" aria-hidden="true"></div>
+  <header class="f-top">
+    <a href="#watch" class="f-back" id="fBack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>Back to site</a>
+    <span class="f-vol">Travel With Fadi · Film room · Vol. 01</span>
+    <button type="button" class="f-sound" id="fSound" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="fSoundTxt">Sound off</span></button>
+  </header>
+  <div class="f-main">
+    <div class="f-intro">
+      <p class="kick"><span class="rec"></span>Shot on phones · no edits</p>
+      <h2 class="f-title">The north,<br><em>in motion.</em></h2>
+      <div class="f-chapters" id="fChaps" role="tablist" aria-label="Chapters">
+        <button type="button" role="tab" data-ch="all" aria-selected="true">All</button>
+        <button type="button" role="tab" data-ch="high" aria-selected="false">Up high</button>
+        <button type="button" role="tab" data-ch="dark" aria-selected="false">Dusk &amp; dark</button>
+        <button type="button" role="tab" data-ch="road" aria-selected="false">On the road</button>
+      </div>
+    </div>
+    <figure class="f-screen">
+      <div class="f-frame paused" id="fFrame">
+        <video id="fVid" playsinline muted preload="metadata"></video>
+        <span class="f-rec"><span class="rec"></span><span id="fTc">00:00</span></span>
+        <button type="button" class="f-tap" id="fTap" aria-label="Play or pause"><span class="big"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span></button>
+        <div class="f-bar"><i id="fProg"></i></div>
+      </div>
+      <svg class="f-stamp" viewBox="0 0 124 124" aria-hidden="true"><defs><path id="fCirc" d="M62 62 m-48 0 a48 48 0 1 1 96 0 a48 48 0 1 1 -96 0"/></defs><text><textPath href="#fCirc" textLength="298">Filmed by our travellers ✦ Pakistan ✦</textPath></text><path d="M55 51 L73 62 L55 73Z" fill="currentColor"/></svg>
+    </figure>
+    <div class="f-meta">
+      <div class="f-count"><span class="f-num" id="fNum"><span>01</span></span><span class="f-of" id="fOf">/ 12</span></div>
+      <span class="chap" id="fChap"></span>
+      <h3 id="fCap"></h3>
+      <p id="fNote"></p>
+      <div class="f-nav">
+        <button type="button" id="fPrev" aria-label="Previous clip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button type="button" id="fNext" aria-label="Next clip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="f-strip"><div class="f-reel" id="fReel" aria-label="All clips"></div></div>
+</div>
+
+<a class="fab" id="fab" href="https://wa.me/923345855430?text=Assalam%20o%20Alaikum%20Fadi%2C%20I%27d%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2c.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+  <span>Chat with Fadi</span>
+</a>
+
+<script>
+(function(){
+  const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  $('#year').textContent=new Date().getFullYear();
+
+  /* nav + menu */
+  const nav=$('#nav'), burger=$('#burger'), menu=$('#menu'), body=document.body;
+  const onScroll=()=>nav.classList.toggle('scrolled',scrollY>40);
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  const toggleMenu=(open)=>{const o=open??!body.classList.contains('menu-open');body.classList.toggle('menu-open',o);body.classList.toggle('lock',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');menu.setAttribute('aria-hidden',!o);};
+  burger.addEventListener('click',()=>toggleMenu());
+  $$('.menu a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+  addEventListener('keydown',e=>{if(e.key==='Escape'){toggleMenu(false);closeLb();$$('.sel.open').forEach(closeSel);}});
+
+  /* reveal on scroll */
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  $$('.rv,.rv-img').forEach(el=>io.observe(el));
+
+  /* marquees: duplicate content for seamless loop */
+  ['#track1','#track2'].forEach(id=>{const t=$(id);t.innerHTML+=t.innerHTML;});
+
+  /* hero parallax (transform only) */
+  const heroImg=$('.hero-bg img');
+  if(!reduce){let tick=false;addEventListener('scroll',()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{const y=Math.min(scrollY,innerHeight);heroImg.style.translate=`0 ${y*.18}px`;tick=false;});},{passive:true});}
+
+  /* destinations: drag + buttons */
+  const track=$('#dTrack');let down=false,sx=0,sl=0;
+  track.addEventListener('pointerdown',e=>{down=true;sx=e.clientX;sl=track.scrollLeft;track.classList.add('drag');});
+  addEventListener('pointerup',()=>{down=false;track.classList.remove('drag');});
+  track.addEventListener('pointermove',e=>{if(!down)return;track.scrollLeft=sl-(e.clientX-sx);});
+  const step=()=>track.querySelector('.dcard').getBoundingClientRect().width+20;
+  $('#dPrev').addEventListener('click',()=>track.scrollBy({left:-step(),behavior:'smooth'}));
+  $('#dNext').addEventListener('click',()=>track.scrollBy({left:step(),behavior:'smooth'}));
+
+  /* services hover → image */
+  const sImgs=$$('.serv-media img'),sCap=$('#servCap');
+  $$('#servList li').forEach(li=>{const show=()=>{$$('#servList li').forEach(x=>x.classList.remove('active'));li.classList.add('active');const i=+li.dataset.img;sImgs.forEach((im,k)=>im.classList.toggle('show',k===i));sCap.textContent=li.querySelector('h3').textContent;};li.addEventListener('mouseenter',show);li.addEventListener('focusin',show);li.addEventListener('click',show);});
+
+  /* custom selects */
+  function closeSel(s){s.classList.remove('open');s.querySelector('.sel-btn').setAttribute('aria-expanded','false');}
+  $$('.sel').forEach(s=>{
+    const btn=s.querySelector('.sel-btn'),val=s.querySelector('.sel-val'),opts=$$('li',s);
+    btn.addEventListener('click',e=>{e.stopPropagation();const o=!s.classList.contains('open');$$('.sel.open').forEach(closeSel);if(o){s.classList.add('open');btn.setAttribute('aria-expanded','true');}});
+    opts.forEach(li=>li.addEventListener('click',()=>{opts.forEach(x=>x.removeAttribute('aria-selected'));li.setAttribute('aria-selected','true');val.textContent=li.textContent;closeSel(s);btn.focus();s.dispatchEvent(new CustomEvent('change',{bubbles:true}));}));
+    btn.addEventListener('keydown',e=>{if(!['ArrowDown','ArrowUp'].includes(e.key))return;e.preventDefault();const cur=opts.findIndex(x=>x.getAttribute('aria-selected')==='true');const n=e.key==='ArrowDown'?Math.min(cur+1,opts.length-1):Math.max(cur-1,0);opts[n].click();s.classList.add('open');btn.setAttribute('aria-expanded','true');});
+  });
+  addEventListener('click',e=>{if(!e.target.closest('.sel'))$$('.sel.open').forEach(closeSel);});
+  const selVal=key=>$(`.sel[data-key="${key}"] .sel-val`).textContent;
+
+  /* stepper */
+  const count=$('#count');let n=2;
+  const setN=v=>{n=Math.max(1,Math.min(40,v));count.textContent=n;count.animate([{transform:'scale(1.3)'},{transform:'scale(1)'}],{duration:350,easing:'cubic-bezier(.22,1,.36,1)'});update();};
+  $('#minus').addEventListener('click',()=>setN(n-1));$('#plus').addEventListener('click',()=>setN(n+1));
+
+  /* planner summary + whatsapp */
+  const summary=$('#summary');
+  const list=a=>a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a.at(-1);
+  function build(){
+    const dest=selVal('dest'),days=selVal('days'),month=selVal('month');
+    const type=$('input[name="type"]:checked').value;
+    const add=$$('#addons input:checked').map(i=>i.value);
+    const tw=n===1?'1 traveller':`${n} travellers`;
+    const an=/^[aeiou8]/i.test(days)?'An':'A';
+    return `${an} ${days.replace(' days','-day')} ${type} trip to ${dest} for ${tw} in ${month}${add.length?', with '+list(add):''}.`;
+  }
+  function update(){summary.classList.add('flip');setTimeout(()=>{summary.textContent=build();summary.classList.remove('flip');},180);}
+  $('#planForm').addEventListener('change',update);
+  $('#planForm').addEventListener('submit',e=>{e.preventDefault();const msg=`Assalam o Alaikum Fadi! I'd like to plan a trip.\n\n${build()}\n\nCan you send me a quote?`;open('https://wa.me/923345855430?text='+encodeURIComponent(msg),'_blank','noopener');});
+
+  /* contact → whatsapp */
+  $('#contactForm').addEventListener('submit',e=>{e.preventDefault();const name=$('#cName').value.trim(),ph=$('#cPhone').value.trim(),m=$('#cMsg').value.trim();
+    if(!name||!ph){[$('#cName'),$('#cPhone')].forEach(i=>{if(!i.value.trim())i.animate([{transform:'translateX(0)'},{transform:'translateX(-6px)'},{transform:'translateX(6px)'},{transform:'translateX(0)'}],{duration:320});});return;}
+    const msg=`Assalam o Alaikum Fadi!\n\nName: ${name}\nPhone: ${ph}\nDestination: ${selVal('cdest')}\n\n${m||'Please share package details.'}`;open('https://wa.me/923345855430?text='+encodeURIComponent(msg),'_blank','noopener');});
+
+  /* gallery lightbox */
+  const figs=$$('#bento .g'),lb=$('#lightbox'),lbImg=$('#lbImg'),lbCap=$('#lbCap');let cur=0;
+  const showLb=i=>{cur=(i+figs.length)%figs.length;const im=figs[cur].querySelector('img');lbImg.src=im.src.replace(/w=\d+/,'w=1800');lbImg.alt=im.alt;lbCap.textContent=im.alt;lb.classList.add('on');body.classList.add('lock');};
+  function closeLb(){lb.classList.remove('on');body.classList.remove('lock');}
+  figs.forEach((f,i)=>f.addEventListener('click',()=>showLb(i)));
+  $('#lbClose').addEventListener('click',closeLb);$('#lbPrev').addEventListener('click',()=>showLb(cur-1));$('#lbNext').addEventListener('click',()=>showLb(cur+1));
+  lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+  addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='ArrowRight')showLb(cur+1);if(e.key==='ArrowLeft')showLb(cur-1);});
+
+  /* film room: full-screen page routed by #films */
+  const clips=[
+    ['paragliding','Paragliding day','high','Strapped in, a running start, and suddenly the lake is under your feet.'],
+    ['snow-day','Snow day up top','high','Snowball fights are not optional above the treeline.'],
+    ['valley-walk','Valley walk','high','Wet grass, low cloud and nowhere to be.'],
+    ['golden-hour','Golden hour at the stay','dark','The light that makes the whole group go quiet for a minute.'],
+    ['night-stop','Night stop on the way','dark','Chai, a stretch, a few photos, back on the road.'],
+    ['fadi-on-the-road','Fadi on the road','road','The man himself, somewhere between pickup and the next viewpoint.'],
+    ['bus-party','The bus never goes quiet','road','Ten hours of road, zero hours of silence.'],
+    ['van-singalong','Van singalong','road','Every playlist ends up being the same five songs.'],
+    ['bus-dance','Dance breaks are mandatory','road','Somebody always starts it. Everybody always joins.'],
+    ['bus-selfie','Checking in from the bus','road','Proof for the family group chat.'],
+    ['bus-dance-2','Encore','road','Same bus, same song, more people.'],
+    ['bus-dance-3','One more time','road','By popular demand.']
+  ].map(([id,cap,ch,note])=>({id,cap,ch,note}));
+  const chName={high:'Up high',dark:'Dusk & dark',road:'On the road'};
+  const films=$('#films'),fVid=$('#fVid'),fFrame=$('#fFrame'),fAmb=$('#fAmb'),fReel=$('#fReel'),fProg=$('#fProg'),fTc=$('#fTc'),fSound=$('#fSound');
+  const auto=!reduce&&!(navigator.connection&&navigator.connection.saveData);
+  const pad=n=>String(n).padStart(2,'0'),tc=s=>pad(Math.floor(s/60))+':'+pad(Math.floor(s%60));
+  let fi=0,fch='all',fMuted=true,fStart=0,raf=0,swapT;
+  fReel.innerHTML=clips.map((c,i)=>`<button type="button" class="f-cell" aria-label="${c.cap}"><img src="videos/${c.id}.jpg" alt="" loading="lazy"><b>${pad(i+1)}</b></button>`).join('');
+  const cells=$$('.f-cell',fReel),chBtns=$$('#fChaps button');
+  const inCh=()=>clips.map((c,i)=>i).filter(i=>fch==='all'||clips[i].ch===fch);
+  const tick=()=>{if(fVid.duration){fProg.style.transform=`scaleX(${fVid.currentTime/fVid.duration})`;fTc.textContent=tc(fVid.currentTime);}raf=requestAnimationFrame(tick);};
+  const playF=()=>fVid.play().catch(()=>fFrame.classList.add('paused'));
+  function setClip(i,play=true){
+    fi=i;const c=clips[i],list=inCh();
+    fFrame.classList.add('swap');fAmb.classList.add('out');clearTimeout(swapT);
+    swapT=setTimeout(()=>{fVid.poster=`videos/${c.id}.jpg`;fVid.src=`videos/${c.id}.mp4`;fVid.muted=fMuted;fAmb.src=fVid.poster;fAmb.classList.remove('out');fFrame.classList.remove('swap');fProg.style.transform='scaleX(0)';fTc.textContent='00:00';if(play&&auto)playF();else fFrame.classList.add('paused');},280);
+    $('#fNum').innerHTML=`<span>${pad(list.indexOf(i)+1)}</span>`;$('#fOf').textContent='/ '+pad(list.length);
+    [['#fChap',chName[c.ch]],['#fCap',c.cap],['#fNote',c.note]].forEach(([s,t])=>{const el=$(s);el.textContent=t;el.classList.remove('anim');void el.offsetWidth;el.classList.add('anim');});
+    cells.forEach((x,k)=>x.classList.toggle('on',k===i));
+    fReel.scrollTo({left:cells[i].offsetLeft-fReel.clientWidth/2+cells[i].offsetWidth/2,behavior:reduce?'auto':'smooth'});
+  }
+  const setCh=ch=>{fch=ch;chBtns.forEach(b=>b.setAttribute('aria-selected',b.dataset.ch===ch));cells.forEach((x,k)=>x.hidden=!(ch==='all'||clips[k].ch===ch));};
+  const stepF=d=>{const l=inCh();setClip(l[(l.indexOf(fi)+d+l.length)%l.length]);};
+  chBtns.forEach(b=>b.addEventListener('click',()=>{setCh(b.dataset.ch);setClip(inCh()[0]);}));
+  cells.forEach((x,i)=>x.addEventListener('click',()=>setClip(i)));
+  $('#fPrev').addEventListener('click',()=>stepF(-1));$('#fNext').addEventListener('click',()=>stepF(1));
+  $('#fTap').addEventListener('click',()=>fVid.paused?playF():fVid.pause());
+  fVid.addEventListener('play',()=>{fFrame.classList.remove('paused');cancelAnimationFrame(raf);tick();});
+  fVid.addEventListener('pause',()=>{fFrame.classList.add('paused');cancelAnimationFrame(raf);});
+  fVid.addEventListener('ended',()=>stepF(1));
+  fSound.addEventListener('click',()=>{fMuted=!fMuted;fVid.muted=fMuted;fSound.setAttribute('aria-pressed',!fMuted);$('#fSoundTxt').textContent=fMuted?'Sound off':'Sound on';if(!fMuted&&fVid.paused)playF();});
+  $$('a[href="#films"]').forEach(a=>a.addEventListener('click',()=>{fStart=+(a.dataset.clip||0);}));
+  function route(){
+    const open=location.hash==='#films';
+    if(open===films.classList.contains('on'))return;
+    if(open&&body.classList.contains('menu-open'))toggleMenu(false);
+    films.classList.toggle('on',open);films.setAttribute('aria-hidden',!open);body.classList.toggle('lock',open);
+    if(open){setCh('all');setClip(fStart);fStart=0;films.scrollTop=0;$('#fBack').focus({preventScroll:true});}
+    else{clearTimeout(swapT);cancelAnimationFrame(raf);fVid.pause();fVid.removeAttribute('src');fVid.load();}
+  }
+  addEventListener('hashchange',route);route();
+  addEventListener('keydown',e=>{if(!films.classList.contains('on'))return;if(e.key==='Escape')location.hash='watch';if(e.key==='ArrowRight')stepF(1);if(e.key==='ArrowLeft')stepF(-1);});
+
+  /* testimonials */
+  const slides=$$('.tslide'),dots=$$('#tnav button');let ti=0,timer;
+  slides.forEach(s=>{const q=s.querySelector('blockquote');q.innerHTML=q.textContent.split(' ').map((w,i)=>`<span class="w" style="animation-delay:${i*25}ms">${w}</span>`).join(' ');});
+  const goT=i=>{ti=(i+slides.length)%slides.length;slides.forEach((s,k)=>{s.classList.toggle('on',k===ti);if(k===ti){s.style.animation='none';s.offsetHeight;s.style.animation='';}});dots.forEach((d,k)=>d.classList.toggle('on',k===ti));clearInterval(timer);timer=setInterval(()=>goT(ti+1),7000);};
+  dots.forEach((d,k)=>d.addEventListener('click',()=>goT(k)));
+  timer=setInterval(()=>goT(ti+1),7000);
+
+  /* fab hides near footer */
+  const fab=$('#fab');new IntersectionObserver(es=>fab.classList.toggle('hide',es[0].isIntersecting),{threshold:.2}).observe($('.footer'));
+})();
+</script>
+</body>
+</html>
